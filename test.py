@@ -1,21 +1,12 @@
-import stack
+temperature = 35  # In Celsius
 
-# previously visited websites
-stack.push('instagram.com')
-stack.push('uek.krakow.pl')
-stack.push('microsoft.com')
+if temperature > 10:
+    print("It's a bit chilly. You might need a jacket.")
+elif temperature > 20:
+    print("The weather is nice. How about a walk?")
+elif temperature > 30:
+    print("It's hot outside. Stay hydrated!")
+else:
+    print("It's cold! Stay indoors or bundle up!")
 
-while True:
-   website = input('Enter website name (0 for back): ')
-
-   # if entered 0
-   #  break if empty stack
-   # else
-   #  read previous website name from stack
-
-   # if entered website name
-   #  add website name to stack
-
-   # print name of website you are currently viewing
-   print('\nYou are currently viewing:', website)
-   print()
+print('I hope I helped somehow.')
